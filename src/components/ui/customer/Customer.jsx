@@ -72,7 +72,6 @@ export default function CustomerReview() {
       {/* O'ng qism — rasm va karta */}
       <div className="relative md:w-1/2 mt-10 md:mt-0">
         <img
-          src="https://images.unsplash.com/photo-1606755962773-d324e0a13082?auto=format&fit=crop&w=800&q=80"
           src={burgerImg} // ⬅️ assets ichidagi rasmi (hozircha kommentda)
           alt="Burger"
           className="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-300"
