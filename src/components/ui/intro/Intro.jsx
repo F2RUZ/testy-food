@@ -2,8 +2,8 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div>
-      <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 py-16 bg-gradient-to-r from-gray-50 to-gray-100">
+    <div className="bg-gradient-to-r from-gray-50 to-gray-100">
+      <section className="max-w-[1920px] mx-auto min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 py-16">
         <div className="max-w-lg text-center md:text-left">
           <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">
             Tasty Food <br />
@@ -25,8 +25,9 @@ const Intro = () => {
 
         <div className="relative mt-10 md:mt-0 flex justify-center items-center">
           <img
+            className="max-w-[600px] w-full"
             src="https://img-api.yumapos.ru/image/crop/original/e8bc4d0a-97d1-5d10-d9ee-c186fef41cc6.png"
-            alt=""
+            alt="Tasty Food"
           />
         </div>
       </section>
