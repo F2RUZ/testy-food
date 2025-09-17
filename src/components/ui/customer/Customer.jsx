@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import burgerImg from "../assets/img/CusImg.png"; // ⬅️ rasmi assets ichidan
 
-export default function CustomerReview() {
+export default function Customer() {
   const [index, setIndex] = useState(0);
 
   const reviews = [
