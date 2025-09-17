@@ -1,0 +1,26 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: ["main"] # main branchga push bo‘lganda
+  pull_request:
+    branches: ["main"] # PR ochilganda
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repositoryni klonlash
+        uses: actions/checkout@v3
+
+      - name: Node.js versiyasini o‘rnatish
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Paketlarni o‘rnatish
+        run: npm install
+
+      - name: Testlarni ishga tushirish
+        run: npm test
